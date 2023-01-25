@@ -2,8 +2,12 @@ import os
 import asyncio
 import discord
 import random
+import functools
 from discord.ext import commands
 from datetime import datetime
+
+# Ensure all prints are flushing
+print = functools.partial(print, flush=True)
 
 TOKEN = os.getenv('DISCORD_TOKEN')
 
